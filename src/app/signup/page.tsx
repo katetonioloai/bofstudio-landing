@@ -5,7 +5,7 @@ import { signIn } from "next-auth/react";
 
 export default function SignUp() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6">
+    <div className="min-h-screen flex items-center justify-center px-5 sm:px-8">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <Link href="/" className="text-2xl font-bold tracking-tight">

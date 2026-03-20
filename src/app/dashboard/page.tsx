@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6">
+    <div className="min-h-screen flex items-center justify-center px-5 sm:px-8">
       <div className="text-center max-w-md">
         <Link href="/" className="text-2xl font-bold tracking-tight inline-block mb-8">
           <span className="bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">BOF</span>studio

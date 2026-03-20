@@ -19,15 +19,15 @@ function FloatingIcon({ children, className, delay = 0 }: { children: React.Reac
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Gradient blobs */}
+      {/* Gradient blobs — scaled down on mobile */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px] animate-blob" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/20 rounded-full blur-[128px] animate-blob-2" />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-pink-500/10 rounded-full blur-[100px] animate-blob" style={{ animationDelay: '4s' }} />
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-blue-600/20 rounded-full blur-[80px] sm:blur-[128px] animate-blob" />
+        <div className="absolute bottom-1/4 right-1/4 w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-purple-500/20 rounded-full blur-[80px] sm:blur-[128px] animate-blob-2" />
+        <div className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 bg-pink-500/10 rounded-full blur-[60px] sm:blur-[100px] animate-blob" style={{ animationDelay: '4s' }} />
       </div>
 
-      {/* Floating elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* Floating elements — hidden on mobile, shown on md+ */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         {/* Phone */}
         <FloatingIcon delay={0.2} className="absolute top-[15%] left-[8%] animate-float-slow">
           <div className="w-12 h-20 rounded-xl border-2 border-blue-500/30 bg-blue-600/10 backdrop-blur-sm flex items-center justify-center">
@@ -60,7 +60,7 @@ export default function HeroSection() {
         </FloatingIcon>
 
         {/* Play button */}
-        <FloatingIcon delay={0.8} className="absolute bottom-[30%] right-[8%] animate-float-slow" >
+        <FloatingIcon delay={0.8} className="absolute bottom-[30%] right-[8%] animate-float-slow">
           <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-500/20 border border-blue-500/20 backdrop-blur-sm flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="rgba(129,140,248,0.7)" stroke="none">
               <polygon points="8 5 20 12 8 19" />
@@ -78,7 +78,7 @@ export default function HeroSection() {
         </FloatingIcon>
 
         {/* Deal pill mockup */}
-        <FloatingIcon delay={0.5} className="absolute bottom-[15%] left-[20%] md:left-[30%] animate-float-medium">
+        <FloatingIcon delay={0.5} className="absolute bottom-[15%] left-[30%] animate-float-medium">
           <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-400/20 rounded-xl px-4 py-2 backdrop-blur-sm">
             <div className="text-xs text-red-300/60 font-bold">🔥 62% OFF</div>
             <div className="text-xs text-white/40">$12.99</div>
@@ -103,13 +103,13 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-5 sm:px-8 lg:px-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-gray-400 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-gray-400 mb-6 sm:mb-8">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             Alpha launching soon
           </div>
@@ -119,9 +119,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6"
         >
-          Your TikTok Shop Videos,{" "}
+          Your TikTok Shop{" "}
+          <br className="hidden sm:block" />
+          Videos,{" "}
           <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Done in Seconds
           </span>
@@ -131,7 +133,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10"
+          className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 px-2"
         >
           The tool BOF creators use to add overlays and generate captions — instantly.
           Built by a creator, for creators.
@@ -141,18 +143,18 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <Link
             href="/signup"
-            className="group relative px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 hover:scale-105"
+            className="group relative w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base sm:text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 hover:scale-105 text-center"
           >
             Get Started Free
             <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity blur-xl -z-10" />
           </Link>
           <a
             href="#how-it-works"
-            className="px-8 py-3.5 rounded-xl border border-white/10 text-gray-300 hover:text-white hover:border-white/20 transition-all font-medium"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-white/10 text-gray-300 hover:text-white hover:border-white/20 transition-all font-medium text-center"
           >
             See How It Works
           </a>

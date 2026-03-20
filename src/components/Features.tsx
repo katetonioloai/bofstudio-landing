@@ -14,10 +14,10 @@ const features = [
       </svg>
     ),
     mockup: (
-      <div className="mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-4">
+      <div className="mt-4 sm:mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-3 sm:p-4">
         <div className="aspect-[9/16] max-h-48 bg-gray-800/30 rounded-lg relative flex items-end justify-center pb-3">
           <div className="text-center text-[10px] text-gray-500 absolute top-1/2 -translate-y-1/2">Product Video</div>
-          <div className="bg-gradient-to-r from-red-500/90 to-orange-500/90 rounded-xl px-4 py-2 w-[85%]">
+          <div className="bg-gradient-to-r from-red-500/90 to-orange-500/90 rounded-xl px-3 sm:px-4 py-2 w-[85%]">
             <div className="text-[10px] font-bold text-white">Medicube Vita C Pads</div>
             <div className="flex items-center gap-2 mt-0.5">
               <span className="text-[10px] text-white/70 line-through">$29.99</span>
@@ -38,7 +38,7 @@ const features = [
       </svg>
     ),
     mockup: (
-      <div className="mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-4">
+      <div className="mt-4 sm:mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-3 sm:p-4">
         <div className="space-y-2">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
@@ -60,27 +60,27 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 px-6">
+    <section id="features" className="py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Everything you need to{" "}
             <span className="bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
               ship faster
             </span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto">
+          <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
             Built for creators who post 5-10+ videos a day and need to move fast.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
@@ -90,10 +90,10 @@ export default function Features() {
               transition={{ duration: 0.6, delay: i * 0.2 }}
               className="group"
             >
-              <div className="h-full p-8 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-all hover:bg-white/[0.05]">
-                <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+              <div className="h-full p-6 sm:p-8 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-all hover:bg-white/[0.05]">
+                <div className="mb-3 sm:mb-4">{feature.icon}</div>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{feature.description}</p>
                 {feature.mockup}
               </div>
             </motion.div>

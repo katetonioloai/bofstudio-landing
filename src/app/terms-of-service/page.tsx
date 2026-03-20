@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function TermsOfService() {
   return (
-    <div className="min-h-screen px-6 py-24">
+    <div className="min-h-screen px-5 sm:px-8 lg:px-12 py-16 sm:py-24">
       <div className="max-w-3xl mx-auto">
         <Link href="/" className="text-lg font-bold tracking-tight inline-block mb-12">
           <span className="bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">BOF</span>studio
