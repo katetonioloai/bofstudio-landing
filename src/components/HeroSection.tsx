@@ -1,0 +1,166 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+function FloatingIcon({ children, className, delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay, duration: 0.8 }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export default function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      {/* Gradient blobs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px] animate-blob" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/20 rounded-full blur-[128px] animate-blob-2" />
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-pink-500/10 rounded-full blur-[100px] animate-blob" style={{ animationDelay: '4s' }} />
+      </div>
+
+      {/* Floating elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Phone */}
+        <FloatingIcon delay={0.2} className="absolute top-[15%] left-[8%] animate-float-slow">
+          <div className="w-12 h-20 rounded-xl border-2 border-blue-500/30 bg-blue-600/10 backdrop-blur-sm flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(129,140,248,0.6)" strokeWidth="2">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </div>
+        </FloatingIcon>
+
+        {/* Shopping bag */}
+        <FloatingIcon delay={0.4} className="absolute top-[20%] right-[12%] animate-float-medium">
+          <div className="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-400/20 backdrop-blur-sm flex items-center justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(168,85,247,0.6)" strokeWidth="2">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+          </div>
+        </FloatingIcon>
+
+        {/* Star rating */}
+        <FloatingIcon delay={0.6} className="absolute bottom-[25%] left-[5%] animate-float-fast">
+          <div className="flex gap-1 bg-yellow-500/10 border border-yellow-400/20 rounded-full px-3 py-1.5 backdrop-blur-sm">
+            {[...Array(5)].map((_, i) => (
+              <svg key={i} width="12" height="12" viewBox="0 0 24 24" fill="rgba(234,179,8,0.6)" stroke="none">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            ))}
+          </div>
+        </FloatingIcon>
+
+        {/* Play button */}
+        <FloatingIcon delay={0.8} className="absolute bottom-[30%] right-[8%] animate-float-slow" >
+          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600/20 to-purple-500/20 border border-blue-500/20 backdrop-blur-sm flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="rgba(129,140,248,0.7)" stroke="none">
+              <polygon points="8 5 20 12 8 19" />
+            </svg>
+          </div>
+        </FloatingIcon>
+
+        {/* Musical note (TikTok vibe) */}
+        <FloatingIcon delay={1.0} className="absolute top-[40%] left-[15%] animate-float-medium">
+          <div className="text-2xl opacity-30">♪</div>
+        </FloatingIcon>
+
+        <FloatingIcon delay={1.2} className="absolute top-[60%] right-[15%] animate-float-fast">
+          <div className="text-xl opacity-20">♫</div>
+        </FloatingIcon>
+
+        {/* Deal pill mockup */}
+        <FloatingIcon delay={0.5} className="absolute bottom-[15%] left-[20%] md:left-[30%] animate-float-medium">
+          <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-400/20 rounded-xl px-4 py-2 backdrop-blur-sm">
+            <div className="text-xs text-red-300/60 font-bold">🔥 62% OFF</div>
+            <div className="text-xs text-white/40">$12.99</div>
+          </div>
+        </FloatingIcon>
+
+        {/* Drifting particles */}
+        <div className="absolute top-[30%] animate-drift-right opacity-20" style={{ animationDelay: '0s' }}>
+          <div className="w-2 h-2 rounded-full bg-blue-400" />
+        </div>
+        <div className="absolute top-[50%] animate-drift-right opacity-15" style={{ animationDelay: '7s' }}>
+          <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+        </div>
+        <div className="absolute top-[70%] animate-drift-left opacity-20" style={{ animationDelay: '3s' }}>
+          <div className="w-2.5 h-2.5 rounded-full bg-pink-400" />
+        </div>
+
+        {/* Spinning ring */}
+        <div className="absolute top-[10%] right-[25%] animate-spin-slow opacity-10">
+          <div className="w-24 h-24 rounded-full border border-blue-500/30" />
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-gray-400 mb-8">
+            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            Alpha launching soon
+          </div>
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
+        >
+          Your TikTok Shop Videos,{" "}
+          <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            Done in Seconds
+          </span>
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10"
+        >
+          The tool BOF creators use to add overlays and generate captions — instantly.
+          Built by a creator, for creators.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <Link
+            href="/signup"
+            className="group relative px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 hover:scale-105"
+          >
+            Get Started Free
+            <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity blur-xl -z-10" />
+          </Link>
+          <a
+            href="#how-it-works"
+            className="px-8 py-3.5 rounded-xl border border-white/10 text-gray-300 hover:text-white hover:border-white/20 transition-all font-medium"
+          >
+            See How It Works
+          </a>
+        </motion.div>
+      </div>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0A0A0F] to-transparent" />
+    </section>
+  );
+}

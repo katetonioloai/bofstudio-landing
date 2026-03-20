@@ -1,0 +1,105 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const features = [
+  {
+    title: "Text Overlay — BOF Pill Format",
+    description: "The deal box that drives purchases. Product name, original price, sale price, discount percentage — all styled and positioned exactly how TikTok Shop buyers expect to see it.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-blue-400">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+        <line x1="3" y1="15" x2="21" y2="15" />
+        <line x1="9" y1="15" x2="9" y2="21" />
+      </svg>
+    ),
+    mockup: (
+      <div className="mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-4">
+        <div className="aspect-[9/16] max-h-48 bg-gray-800/30 rounded-lg relative flex items-end justify-center pb-3">
+          <div className="text-center text-[10px] text-gray-500 absolute top-1/2 -translate-y-1/2">Product Video</div>
+          <div className="bg-gradient-to-r from-red-500/90 to-orange-500/90 rounded-xl px-4 py-2 w-[85%]">
+            <div className="text-[10px] font-bold text-white">Medicube Vita C Pads</div>
+            <div className="flex items-center gap-2 mt-0.5">
+              <span className="text-[10px] text-white/70 line-through">$29.99</span>
+              <span className="text-sm font-bold text-white">$12.99</span>
+              <span className="text-[9px] bg-white/20 rounded px-1 py-0.5 text-white font-bold">-57%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "AI-Generated Captions",
+    description: "Stop staring at a blank caption box. BOFstudio generates engaging, conversion-optimized product descriptions tailored for TikTok — complete with hashtags and hooks.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-purple-400">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+      </svg>
+    ),
+    mockup: (
+      <div className="mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-4">
+        <div className="space-y-2">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <span className="text-[10px] text-gray-400">AI Generated</span>
+          </div>
+          <p className="text-xs text-gray-300 leading-relaxed">
+            ok but why did nobody tell me about these vitamin C pads sooner 😭 my skin has been GLOWING since day 3 and they&apos;re literally under $13 rn
+          </p>
+          <div className="flex flex-wrap gap-1 mt-2">
+            {["#tiktokmademebuyit", "#skincare", "#vitamincpads", "#tikokshopfinds"].map((tag) => (
+              <span key={tag} className="text-[9px] text-blue-400/60">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    ),
+  },
+];
+
+export default function Features() {
+  return (
+    <section id="features" className="py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            Everything you need to{" "}
+            <span className="bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
+              ship faster
+            </span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-xl mx-auto">
+            Built for creators who post 5-10+ videos a day and need to move fast.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {features.map((feature, i) => (
+            <motion.div
+              key={feature.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
+              className="group"
+            >
+              <div className="h-full p-8 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-white/10 transition-all hover:bg-white/[0.05]">
+                <div className="mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                {feature.mockup}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

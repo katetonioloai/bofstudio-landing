@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A0A0F;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero floating animations */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-3deg); }
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes blob-shift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes blob-shift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-40px, 30px) scale(1.15); }
+  66% { transform: translate(25px, -40px) scale(0.85); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes drift-right {
+  0% { transform: translateX(-100px) translateY(0); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateX(calc(100vw + 100px)) translateY(-30px); opacity: 0; }
+}
+
+@keyframes drift-left {
+  0% { transform: translateX(100vw) translateY(0); opacity: 0; }
+  10% { opacity: 0.5; }
+  90% { opacity: 0.5; }
+  100% { transform: translateX(-100px) translateY(20px); opacity: 0; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+.animate-float-medium { animation: float-medium 4s ease-in-out infinite; }
+.animate-float-fast { animation: float-fast 3s ease-in-out infinite; }
+.animate-blob { animation: blob-shift 12s ease-in-out infinite; }
+.animate-blob-2 { animation: blob-shift-2 14s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+.animate-drift-right { animation: drift-right 20s linear infinite; }
+.animate-drift-left { animation: drift-left 25s linear infinite; }
+.animate-spin-slow { animation: spin-slow 20s linear infinite; }
