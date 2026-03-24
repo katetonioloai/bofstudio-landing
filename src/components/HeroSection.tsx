@@ -120,7 +120,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6"
         >
-          Your TikTok Shop Videos,{" "}
+          Your TikTok Shop BOF Videos,{" "}
           <br className="hidden sm:block" />
           <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Done in Seconds
