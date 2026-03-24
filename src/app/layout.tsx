@@ -10,7 +10,29 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "BOFstudio — TikTok Shop BOF Videos, Done in Seconds",
-  description: "The tool BOF creators use to add overlays and generate captions — instantly. Built by a creator, for creators.",
+  description: "Add overlays, trim clips, and generate captions for your TikTok Shop BOF videos — all from your phone. Built by a creator, for creators.",
+  keywords: ["TikTok Shop", "BOF", "bottom of funnel", "video overlay", "TikTok creator tool", "BOFstudio"],
+  openGraph: {
+    title: "BOFstudio — TikTok Shop BOF Videos, Done in Seconds",
+    description: "Add overlays, trim clips, and generate captions — all from your phone. Built by a creator, for creators.",
+    url: "https://katetonioloai.github.io/bofstudio-landing/",
+    siteName: "BOFstudio",
+    images: [
+      {
+        url: "/bofstudio-landing/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "BOFstudio — TikTok Shop BOF Video Creator",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BOFstudio — TikTok Shop BOF Videos, Done in Seconds",
+    description: "Add overlays, trim clips, and generate captions — all from your phone.",
+    images: ["/bofstudio-landing/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
