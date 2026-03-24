@@ -15,6 +15,7 @@ const tiers = [
       "720p export",
     ],
     cta: "Get Started",
+    href: "https://buy.stripe.com/4gMaEW5Uc9UQ35291B8k800",
     highlighted: false,
   },
   {
@@ -31,6 +32,7 @@ const tiers = [
       "Batch upload (10 at once)",
     ],
     cta: "Get Creator",
+    href: "https://buy.stripe.com/14AfZg96o7MI6hedhR8k801",
     highlighted: true,
     badge: "Most Popular",
   },
@@ -46,6 +48,7 @@ const tiers = [
       "Priority support",
     ],
     cta: "Go Unlimited",
+    href: "https://buy.stripe.com/3cIaEW0zSffadJG3Hh8k802",
     highlighted: false,
   },
 ];
@@ -115,7 +118,7 @@ export default function Pricing() {
                 </ul>
 
                 <a
-                  href="https://getbofstudio.com/"
+                  href={tier.href}
                   className={`block text-center py-3 rounded-xl font-medium transition-all ${
                     tier.highlighted
                       ? "bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-500 hover:to-purple-400 text-white hover:shadow-lg hover:shadow-blue-600/25"
