@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Text Overlay — BOF Pill Format",
-    description: "The deal box that drives purchases. Product name, original price, sale price, discount percentage — all styled and positioned exactly how TikTok Shop buyers expect to see it.",
+    title: "Text Overlay — BOF Style",
+    description: "Add attention-grabbing overlays to your videos. Choose from pill-style deal boxes or full-screen text hooks — the formats that TikTok Shop buyers respond to.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-blue-400">
         <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
@@ -17,13 +17,9 @@ const features = [
       <div className="mt-4 sm:mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-3 sm:p-4">
         <div className="aspect-[9/16] max-h-48 bg-gray-800/30 rounded-lg relative flex items-end justify-center pb-3">
           <div className="text-center text-[10px] text-gray-500 absolute top-1/2 -translate-y-1/2">Product Video</div>
-          <div className="bg-gradient-to-r from-red-500/90 to-orange-500/90 rounded-xl px-3 sm:px-4 py-2 w-[85%]">
-            <div className="text-[10px] font-bold text-white">Medicube Vita C Pads</div>
-            <div className="flex items-center gap-2 mt-0.5">
-              <span className="text-[10px] text-white/70 line-through">$29.99</span>
-              <span className="text-sm font-bold text-white">$12.99</span>
-              <span className="text-[9px] bg-white/20 rounded px-1 py-0.5 text-white font-bold">-57%</span>
-            </div>
+          <div className="flex flex-col items-center gap-0">
+            <div className="bg-white text-[#111] font-black text-[10px] px-4 py-[5px]">DOUBLE DISCOUNT</div>
+            <div className="bg-[#EE1D52] text-white font-black text-[10px] px-4 py-[5px]">TODAY ONLY</div>
           </div>
         </div>
       </div>
@@ -48,7 +44,7 @@ const features = [
             ok but why did nobody tell me about these vitamin C pads sooner 😭 my skin has been GLOWING since day 3 and they&apos;re literally under $13 rn
           </p>
           <div className="flex flex-wrap gap-1 mt-2">
-            {["#tiktokmademebuyit", "#skincare", "#vitamincpads", "#tikokshopfinds"].map((tag) => (
+            {["#tiktokmademebuyit", "#skincare", "#vitamincpads", "#tiktokshopfinds"].map((tag) => (
               <span key={tag} className="text-[9px] text-blue-400/60">{tag}</span>
             ))}
           </div>

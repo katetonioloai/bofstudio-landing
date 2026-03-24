@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { number: "500+", label: "Videos Created" },
-  { number: "50+", label: "Creators" },
   { number: "2", label: "Overlay Styles" },
-  { number: "1", label: "Platform (TikTok)" },
+  { number: "10+", label: "Hook Templates" },
+  { number: "30s", label: "Avg Processing" },
+  { number: "10", label: "Batch Upload" },
 ];
 
 export default function Stats() {

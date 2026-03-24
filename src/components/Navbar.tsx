@@ -48,14 +48,14 @@ export default function Navbar() {
 
         {/* Right side — Sign In + Get Started */}
         <div className="hidden md:flex items-center gap-3">
-          <Link
-            href="/signin"
-            className="text-sm text-gray-300 hover:text-white transition-colors"
-          >
-            Sign In
-          </Link>
           <a
             href="https://getbofstudio.com/"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
+            Open App
+          </a>
+          <a
+            href="#pricing"
             className="text-sm px-5 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-500 hover:to-purple-400 transition-all font-semibold text-white"
           >
             Get Started
@@ -92,16 +92,16 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Link
-              href="/signin"
+            <a
+              href="https://getbofstudio.com/"
               onClick={() => setMobileOpen(false)}
               className="block py-3 text-lg text-gray-300 hover:text-white transition-colors border-b border-white/5"
             >
-              Sign In
-            </Link>
+              Open App
+            </a>
             <div className="pt-4">
               <a
-                href="https://getbofstudio.com/"
+                href="#pricing"
                 onClick={() => setMobileOpen(false)}
                 className="block w-full text-center py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base"
               >
