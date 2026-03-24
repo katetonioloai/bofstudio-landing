@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 function FloatingIcon({ children, className, delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
   return (
@@ -111,7 +110,7 @@ export default function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-gray-400 mb-6 sm:mb-8">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Alpha launching soon
+            Now in Beta
           </div>
         </motion.div>
 
@@ -121,9 +120,8 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6"
         >
-          Your TikTok Shop{" "}
+          Your TikTok Shop Videos,{" "}
           <br className="hidden sm:block" />
-          Videos,{" "}
           <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Done in Seconds
           </span>
@@ -135,8 +133,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 px-2"
         >
-          The tool BOF creators use to add overlays and generate captions — instantly.
-          Built by a creator, for creators.
+          Add overlays, trim clips, and generate captions — all from your phone. Built by a creator, for creators.
         </motion.p>
 
         <motion.div
@@ -145,18 +142,12 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
-          <Link
-            href="/signup"
+          <a
+            href="https://getbofstudio.com/"
             className="group relative w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base sm:text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 hover:scale-105 text-center"
           >
-            Get Started Free
+            Start Creating — It&apos;s Free
             <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity blur-xl -z-10" />
-          </Link>
-          <a
-            href="#how-it-works"
-            className="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-white/10 text-gray-300 hover:text-white hover:border-white/20 transition-all font-medium text-center"
-          >
-            See How It Works
           </a>
         </motion.div>
       </div>

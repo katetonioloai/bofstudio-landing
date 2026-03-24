@@ -1,35 +1,51 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const tiers = [
   {
-    name: "Free",
-    price: "$0",
-    period: "forever",
-    videos: "5 videos/mo",
-    features: ["Basic overlays", "Standard captions", "720p export"],
-    cta: "Start Free",
+    name: "Starter",
+    price: "$9",
+    period: "/mo",
+    videos: "10 videos/day",
+    features: [
+      "All overlay styles",
+      "AI captions",
+      "Video trimming",
+      "720p export",
+    ],
+    cta: "Get Started",
     highlighted: false,
   },
   {
     name: "Creator",
     price: "$19",
     period: "/mo",
-    videos: "50 videos/mo",
-    features: ["All overlay styles", "AI-powered captions", "1080p export", "Priority processing"],
+    videos: "40 videos/day",
+    features: [
+      "All overlay styles",
+      "AI captions",
+      "Video trimming",
+      "1080p export",
+      "Priority processing",
+      "Batch upload (10 at once)",
+    ],
     cta: "Get Creator",
     highlighted: true,
     badge: "Most Popular",
   },
   {
-    name: "Pro",
-    price: "$39",
+    name: "Unlimited",
+    price: "$49",
     period: "/mo",
     videos: "Unlimited videos",
-    features: ["All overlay styles", "AI-powered captions", "1080p export", "Priority processing", "Custom branding", "API access"],
-    cta: "Go Pro",
+    features: [
+      "Everything in Creator",
+      "Custom branding templates",
+      "API access",
+      "Priority support",
+    ],
+    cta: "Go Unlimited",
     highlighted: false,
   },
 ];
@@ -98,8 +114,8 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <Link
-                  href="/signup"
+                <a
+                  href="https://getbofstudio.com/"
                   className={`block text-center py-3 rounded-xl font-medium transition-all ${
                     tier.highlighted
                       ? "bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-500 hover:to-purple-400 text-white hover:shadow-lg hover:shadow-blue-600/25"
@@ -107,7 +123,7 @@ export default function Pricing() {
                   }`}
                 >
                   {tier.cta}
-                </Link>
+                </a>
               </div>
             </motion.div>
           ))}

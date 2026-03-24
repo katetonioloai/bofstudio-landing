@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Is there a free trial?",
-    answer: "Better — there's a free tier. 5 videos per month, forever. No credit card required. Upgrade when you're ready to scale.",
+    answer: "We offer a Starter plan at just $9/month with 10 videos per day. No contracts — cancel anytime.",
   },
   {
     question: "Can I cancel anytime?",
