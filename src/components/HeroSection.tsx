@@ -18,7 +18,7 @@ export default function HeroSection() {
           <source src="/bofstudio-landing/hero-video.mp4" type="video/mp4" />
         </video>
         {/* Gradient overlay — dark at top for text readability, transparent in middle to show video, dark at bottom for transition */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a1a]/80 via-[#0a0a1a]/30 to-[#0a0a1a]/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a1a]/50 via-transparent to-[#0a0a1a]/70" />
       </div>
 
       {/* Floating light orbs like Vugola — soft bokeh effect */}
