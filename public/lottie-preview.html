@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOFstudio — Pick a Hero Animation</title>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0A0A0F; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 40px 20px; }
+  h1 { text-align: center; font-size: 28px; margin-bottom: 10px; }
+  p.sub { text-align: center; color: #888; margin-bottom: 40px; font-size: 15px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
+  .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; text-align: center; transition: border-color 0.3s; }
+  .card:hover { border-color: rgba(99,102,241,0.5); }
+  .card h3 { font-size: 18px; margin: 16px 0 6px; }
+  .card .desc { color: #888; font-size: 13px; line-height: 1.5; }
+  .card .tag { display: inline-block; background: rgba(99,102,241,0.15); color: #818cf8; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; margin-top: 12px; }
+  lottie-player { max-width: 300px; margin: 0 auto; border-radius: 12px; }
+</style>
+</head>
+<body>
+  <h1>🎬 Pick a Hero Animation</h1>
+  <p class="sub">Choose one for the BOFstudio landing page hero section. Tell me the number!</p>
+
+  <div class="grid">
+    <!-- Option 1: Person working at computer -->
+    <div class="card">
+      <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" loop autoplay style="height:280px"></lottie-player>
+      <h3>Option 1 — Creator at Desk</h3>
+      <div class="desc">Person working at computer with floating elements. Chill work vibes.</div>
+      <span class="tag">Work / Creator</span>
+    </div>
+
+    <!-- Option 2: Social Media / Content Creation -->
+    <div class="card">
+      <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_4fET52.json" background="transparent" speed="1" loop autoplay style="height:280px"></lottie-player>
+      <h3>Option 2 — Social Media World</h3>
+      <div class="desc">Social media icons and engagement floating around. Digital content vibes.</div>
+      <span class="tag">Social Media</span>
+    </div>
+
+    <!-- Option 3: Video editing / creative -->
+    <div class="card">
+      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1" loop autoplay style="height:280px"></lottie-player>
+      <h3>Option 3 — Video Creator</h3>
+      <div class="desc">Video editing and content creation scene. Creator-focused.</div>
+      <span class="tag">Video / Editing</span>
+    </div>
+
+    <!-- Option 4: Phone with content -->
+    <div class="card">
+      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_abqysclq.json" background="transparent" speed="1" loop autoplay style="height:280px"></lottie-player>
+      <h3>Option 4 — Phone Content</h3>
+      <div class="desc">Mobile-first content creation. Phone with dynamic elements.</div>
+      <span class="tag">Mobile / Phone</span>
+    </div>
+
+    <!-- Option 5: Digital marketing -->
+    <div class="card">
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_svy4ivvy.json" background="transparent" speed="1" loop autoplay style="height:280px"></lottie-player>
+      <h3>Option 5 — Digital Marketing</h3>
+      <div class="desc">Marketing and growth vibes. Charts, engagement, and content.</div>
+      <span class="tag">Marketing</span>
+    </div>
+
+    <!-- Option 6: Creative workspace -->
+    <div class="card">
+      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_khtt8ejx.json" background="transparent" speed="1" loop autoplay style="height:280px"></lottie-player>
+      <h3>Option 6 — Creative Workspace</h3>
+      <div class="desc">Colorful creative workspace with tools and ideas floating around.</div>
+      <span class="tag">Creative</span>
+    </div>
+  </div>
+</body>
+</html>
