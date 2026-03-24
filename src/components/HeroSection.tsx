@@ -12,13 +12,13 @@ export default function HeroSection() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
           poster="/bofstudio-landing/hero-poster.jpg"
         >
           <source src="/bofstudio-landing/hero-video.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0F]/60 via-[#0A0A0F]/40 to-[#0A0A0F]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0F]/30 via-[#0A0A0F]/20 to-[#0A0A0F]/80" />
       </div>
 
       {/* Content */}
