@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "How It Works", href: "#how-it-works" },
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
@@ -13,31 +12,29 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
     }
-    return () => {
-      document.body.style.overflow = "";
-    };
+    return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0F]/80 backdrop-blur-xl border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 h-16 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4">
+      {/* Floating pill navbar */}
+      <div className="flex items-center justify-between gap-2 px-4 sm:px-6 py-2.5 rounded-full bg-white/[0.06] backdrop-blur-xl border border-white/10 shadow-lg shadow-black/20 max-w-3xl w-full">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold tracking-tight">
+        <Link href="/" className="text-lg font-bold tracking-tight flex-shrink-0">
           <span className="bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
             BOF
           </span>
-          studio
+          <span className="text-white">studio</span>
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop nav links — centered */}
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -47,27 +44,31 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+        </div>
+
+        {/* Right side — Sign In + Get Started */}
+        <div className="hidden md:flex items-center gap-3">
           <Link
             href="/signin"
             className="text-sm text-gray-300 hover:text-white transition-colors"
           >
             Sign In
           </Link>
-          <Link
-            href="/signup"
-            className="text-sm px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-500 hover:to-purple-400 transition-all font-medium"
+          <a
+            href="https://getbofstudio.com/"
+            className="text-sm px-5 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-500 hover:to-purple-400 transition-all font-semibold text-white"
           >
             Get Started
-          </Link>
+          </a>
         </div>
 
         {/* Mobile hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 text-gray-400 hover:text-white relative z-50"
+          className="md:hidden p-1.5 text-gray-400 hover:text-white"
           aria-label="Toggle menu"
         >
-          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2">
             {mobileOpen ? (
               <path d="M6 6l12 12M6 18L18 6" />
             ) : (
@@ -99,13 +100,13 @@ export default function Navbar() {
               Sign In
             </Link>
             <div className="pt-4">
-              <Link
-                href="/signup"
+              <a
+                href="https://getbofstudio.com/"
                 onClick={() => setMobileOpen(false)}
-                className="block w-full text-center py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base"
+                className="block w-full text-center py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base"
               >
                 Get Started
-              </Link>
+              </a>
             </div>
           </div>
         </div>
