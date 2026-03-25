@@ -5,23 +5,36 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Drop In Your Product Video",
-    description: "Upload up to 10 videos at once — from your phone, TikTok Shop, or brand assets. Any format works. Batch it.",
+    title: "Choose a Product",
+    description: "Add your TikTok Shop product — just paste the link and BOFstudio pulls the name, price, and image automatically.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-blue-400 sm:w-8 sm:h-8">
-        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-        <polyline points="17 8 12 3 7 8" />
-        <line x1="12" y1="3" x2="12" y2="15" />
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <path d="M16 10a4 4 0 01-8 0" />
       </svg>
     ),
   },
   {
     number: "02",
-    title: "Get Overlay + Caption — Post It",
-    description: "BOFstudio burns a pill-style deal box or hook text onto your video, then generates an AI caption with product-specific hashtags so TikTok knows exactly what you're selling. More views. More sales.",
+    title: "Select Your Text Hook",
+    description: "Pick a BOF Traditional pill overlay (deal box) or a Hook Text overlay. Choose from proven templates or write your own.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-purple-400 sm:w-8 sm:h-8">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <path d="M9 9h6M9 12h6M9 15h4" />
+      </svg>
+    ),
+  },
+  {
+    number: "03",
+    title: "Upload Your Video — Done",
+    description: "Upload your raw clip. BOFstudio burns the overlay onto it, generates an AI caption with hashtags, and your video is ready to post in seconds.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-pink-400 sm:w-8 sm:h-8">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+        <polyline points="17 8 12 3 7 8" />
+        <line x1="12" y1="3" x2="12" y2="15" />
       </svg>
     ),
   },
@@ -39,15 +52,15 @@ export default function HowItWorks() {
           className="text-center mb-10 sm:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
-            Two steps.{" "}
+            Three steps.{" "}
             <span className="text-gray-500">No editing skills needed.</span>
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
-            Upload. Get your overlay + caption. Post. Repeat 10 times today.
+            Choose product → pick hook → upload video. Done in 30 seconds.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {steps.map((step, i) => (
             <motion.div
               key={step.number}
