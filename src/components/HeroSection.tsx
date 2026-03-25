@@ -50,9 +50,7 @@ export default function HeroSection() {
         >
           Your TikTok Shop BOF Videos,{" "}
           <br className="hidden sm:block" />
-          <span className="text-blue-400">
-            Done in Seconds
-          </span>
+          Done in Seconds
         </motion.h1>
 
         <motion.p
