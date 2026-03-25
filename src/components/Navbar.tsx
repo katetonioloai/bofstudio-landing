@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between gap-4 px-5 py-3 rounded-full bg-[#0a0a1a]/80 backdrop-blur-xl border border-white/10 shadow-lg shadow-black/20 w-full max-w-2xl">
         {/* Logo — text wordmark like Vugola */}
         <Link href="/" className="flex-shrink-0 font-extrabold text-2xl tracking-tight" style={{ color: "#ffffff" }}>
-          BOFstudio
+          BOFSTUDIO
         </Link>
 
         {/* Single CTA button */}
