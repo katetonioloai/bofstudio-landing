@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const features = [
   {
     title: "BOF Deal Overlays — Burned In",
-    description: "Pick a pill-style deal box or a big hook overlay. BOFstudio burns it right into your video so it shows up on every platform, every time — no stickers, no editing apps.",
+    description: "Pick a deal pill or hook overlay — BOFstudio burns it directly into your video. Shows up on every repost, every platform. No stickers that fall off.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-blue-400">
         <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: "AI Captions That Get You Found",
-    description: "BOFstudio writes captions with your product name + BOF hashtags so TikTok classifies your video correctly. That means more search visibility, more views, more sales. No blank caption box.",
+    description: "BOFstudio writes your caption with the product name + hashtags that make TikTok classify your video as a BOF deal. More classification = more search traffic = more commissions.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-purple-400">
         <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
@@ -54,7 +54,7 @@ const features = [
   },
   {
     title: "Quick Trim Before You Post",
-    description: "Cut dead air from the start or end of your clip before burning the overlay. Tight videos perform better — and BOFstudio handles it all in one place.",
+    description: "Trim dead air from the start or end right inside BOFstudio. No switching apps. Tighter clips get more watch time — and the algorithm rewards that.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-pink-400">
         <circle cx="6" cy="6" r="3" />

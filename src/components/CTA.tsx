@@ -13,19 +13,19 @@ export default function CTA() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6">
-            Your competitors are already{" "}
+            Every BOF video you don&apos;t post is{" "}
             <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              posting faster.
+              a sale you don&apos;t make.
             </span>
           </h2>
           <p className="text-gray-400 text-base sm:text-lg mb-8 sm:mb-10 max-w-xl mx-auto">
-            BOFstudio creators add overlays, generate captions, and post TikTok Shop BOF videos in seconds — not hours. Get your first video done in under 60 seconds.
+            BOFstudio creators add overlays, generate captions, and batch-post TikTok Shop BOF videos in seconds. Get your first video done in under 60 seconds.
           </p>
           <a
             href="https://getbofstudio.com/"
             className="group relative inline-block px-10 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base sm:text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 hover:scale-105"
           >
-            Start Now — From $9/mo
+            Start Posting Faster — $9/mo
             <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity blur-xl -z-10" />
           </a>
         </motion.div>
