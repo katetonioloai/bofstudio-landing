@@ -28,7 +28,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/bofstudio-landing/logo.png" alt="BOFstudio" className="h-8 w-auto brightness-0 invert" />
+          <img src="/bofstudio-landing/logo.png" alt="BOFstudio" className="h-12 w-auto brightness-0 invert" />
         </Link>
 
         {/* Desktop nav links — centered */}
