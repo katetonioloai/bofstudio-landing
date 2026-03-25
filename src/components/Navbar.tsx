@@ -7,10 +7,9 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4">
       {/* Floating pill navbar — Vugola style: full width, logo left, CTA right */}
       <div className="flex items-center justify-between gap-4 px-5 py-3 rounded-full bg-white/[0.08] backdrop-blur-xl border border-white/10 shadow-lg shadow-black/20 w-full max-w-2xl">
-        {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/bofstudio-landing/logo.png" alt="BOFstudio" className="h-14 w-auto brightness-0 invert" />
+        {/* Logo — text wordmark like Vugola */}
+        <Link href="/" className="flex-shrink-0 text-white font-bold text-xl tracking-tight">
+          BOFstudio
         </Link>
 
         {/* Single CTA button */}
