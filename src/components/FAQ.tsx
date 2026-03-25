@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const faqs = [
   {
     question: "What is BOF content on TikTok Shop?",
-    answer: "BOF = bottom of funnel. These are TikTok Shop videos designed to convert — they show a product in action with a deal overlay (price, discount, product name) that makes viewers tap \"buy\" on the spot. BOFstudio makes creating them stupidly fast.",
+    answer: "BOF = bottom of funnel. These are TikTok Shop videos designed to convert — they show a product in action with a deal overlay (price, discount, product name) that makes viewers tap \"buy\" on the spot. BOFstudio makes creating them incredibly fast.",
   },
   {
     question: "How do the text overlays work?",
