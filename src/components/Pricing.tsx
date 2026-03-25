@@ -23,7 +23,7 @@ const tiers = [
     name: "Creator",
     price: "$29",
     period: "/mo",
-    videos: "40 BOF videos/day",
+    videos: "50 BOF videos/day",
     features: [
       "30 active products",
       "All overlay styles",
