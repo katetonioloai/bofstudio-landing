@@ -73,7 +73,7 @@ export default function HeroSection() {
             href="https://getbofstudio.com/"
             className="group relative inline-block px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base sm:text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 hover:scale-105 text-center"
           >
-            Start Creating
+            Start Editing
             <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity blur-xl -z-10" />
           </a>
         </motion.div>
