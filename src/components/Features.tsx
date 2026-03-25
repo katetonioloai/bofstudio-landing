@@ -13,7 +13,14 @@ const features = [
         <line x1="9" y1="15" x2="9" y2="21" />
       </svg>
     ),
-    mockup: null,
+    mockup: (
+      <div className="mt-4 sm:mt-6 flex gap-3">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/bofstudio-landing/mockup-pill.png" alt="BOF Traditional overlay" className="flex-1 rounded-xl object-cover max-h-52" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/bofstudio-landing/mockup-hook.png" alt="Hook Text overlay" className="flex-1 rounded-xl object-cover max-h-52" />
+      </div>
+    ),
   },
   {
     title: "AI Captions That Get You Found",
