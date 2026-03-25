@@ -13,27 +13,7 @@ const features = [
         <line x1="9" y1="15" x2="9" y2="21" />
       </svg>
     ),
-    mockup: (
-      <div className="mt-4 sm:mt-6 rounded-xl overflow-hidden bg-gradient-to-b from-gray-800/50 to-gray-900/50 border border-white/5 p-3 sm:p-4">
-        <div className="flex gap-3">
-          {/* Pill overlay style */}
-          <div className="flex-1 aspect-[9/16] max-h-48 bg-gray-800/30 rounded-lg relative flex items-end justify-center pb-3">
-            <div className="text-center text-[9px] text-gray-500 absolute top-1/2 -translate-y-1/2">BOF Traditional</div>
-            <div className="flex flex-col items-center gap-0">
-              <div className="bg-white text-[#111] font-black text-[9px] px-3 py-[4px]">DOUBLE DISCOUNT</div>
-              <div className="bg-[#EE1D52] text-white font-black text-[9px] px-3 py-[4px]">TODAY ONLY</div>
-            </div>
-          </div>
-          {/* Hook text style */}
-          <div className="flex-1 aspect-[9/16] max-h-48 bg-gray-800/30 rounded-lg relative flex items-center justify-center">
-            <div className="text-center text-[9px] text-gray-500 absolute top-3">Hook Text</div>
-            <div className="px-2 text-center">
-              <div className="text-white font-black text-[11px] leading-tight drop-shadow-lg">Wait — this is only $9?! 😱</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    ),
+    mockup: null,
   },
   {
     title: "AI Captions That Get You Found",
