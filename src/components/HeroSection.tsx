@@ -50,7 +50,7 @@ export default function HeroSection() {
         >
           Your TikTok Shop BOF Videos,{" "}
           <br className="hidden sm:block" />
-          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <span className="text-blue-400">
             Done in Seconds
           </span>
         </motion.h1>
