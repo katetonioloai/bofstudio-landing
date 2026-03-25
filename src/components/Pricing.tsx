@@ -33,7 +33,7 @@ const tiers = [
       "Priority processing",
     ],
     cta: "Get Creator",
-    href: "https://buy.stripe.com/14AfZg96o7MI6hedhR8k801",
+    href: "https://buy.stripe.com/6oUbJ0fuM3wsdJG3Hh8k803",
     highlighted: true,
     badge: "Best for Active Creators",
   },
@@ -49,7 +49,7 @@ const tiers = [
       "Priority support",
     ],
     cta: "Go Unlimited",
-    href: "https://buy.stripe.com/3cIaEW0zSffadJG3Hh8k802",
+    href: "https://buy.stripe.com/28EeVc96o6IEgVSgu38k804",
     highlighted: false,
   },
 ];
