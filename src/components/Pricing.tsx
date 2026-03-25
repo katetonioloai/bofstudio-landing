@@ -21,7 +21,7 @@ const tiers = [
   },
   {
     name: "Creator",
-    price: "$19",
+    price: "$29",
     period: "/mo",
     videos: "40 BOF videos/day",
     features: [
@@ -39,7 +39,7 @@ const tiers = [
   },
   {
     name: "Unlimited",
-    price: "$49",
+    price: "$59",
     period: "/mo",
     videos: "Unlimited videos",
     features: [
