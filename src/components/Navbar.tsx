@@ -6,9 +6,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4">
       {/* Floating pill navbar — Vugola style: full width, logo left, CTA right */}
-      <div className="flex items-center justify-between gap-4 px-5 py-3 rounded-full bg-white/[0.08] backdrop-blur-xl border border-white/10 shadow-lg shadow-black/20 w-full max-w-2xl">
+      <div className="flex items-center justify-between gap-4 px-5 py-3 rounded-full bg-[#0a0a1a]/80 backdrop-blur-xl border border-white/10 shadow-lg shadow-black/20 w-full max-w-2xl">
         {/* Logo — text wordmark like Vugola */}
-        <Link href="/" className="flex-shrink-0 text-white font-bold text-xl tracking-tight">
+        <Link href="/" className="flex-shrink-0 font-extrabold text-2xl tracking-tight" style={{ color: "#ffffff" }}>
           BOFstudio
         </Link>
 
