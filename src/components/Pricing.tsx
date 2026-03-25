@@ -7,7 +7,7 @@ const tiers = [
     name: "Starter",
     price: "$9",
     period: "/mo",
-    videos: "10 videos/day",
+    videos: "10 BOF videos/day",
     features: [
       "All overlay styles",
       "AI captions",
@@ -22,7 +22,7 @@ const tiers = [
     name: "Creator",
     price: "$19",
     period: "/mo",
-    videos: "40 videos/day",
+    videos: "40 BOF videos/day",
     features: [
       "All overlay styles",
       "AI captions",
@@ -34,7 +34,7 @@ const tiers = [
     cta: "Get Creator",
     href: "https://buy.stripe.com/14AfZg96o7MI6hedhR8k801",
     highlighted: true,
-    badge: "Most Popular",
+    badge: "Best for Active Creators",
   },
   {
     name: "Unlimited",
@@ -65,11 +65,11 @@ export default function Pricing() {
           className="text-center mb-10 sm:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
-            Simple pricing.{" "}
-            <span className="text-gray-500">No credits.</span>
+            Flat monthly.{" "}
+            <span className="text-gray-500">No per-video fees.</span>
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
-            Flat monthly. No per-video fees. No surprises.
+            Pay once, post all day. No credits, no hidden fees, no contracts.
           </p>
         </motion.div>
 

@@ -38,7 +38,7 @@ export default function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-sm text-sm text-gray-300 mb-6 sm:mb-8">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            Now in Beta
+            Built for TikTok Shop affiliates
           </div>
         </motion.div>
 
@@ -48,10 +48,10 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6 drop-shadow-lg"
         >
-          Your TikTok Shop BOF Videos,{" "}
+          Overlays. Captions. Posted.{" "}
           <br className="hidden sm:block" />
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Done in Seconds
+            Your BOF Videos in Seconds.
           </span>
         </motion.h1>
 
@@ -61,7 +61,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 sm:mb-10 px-2 drop-shadow-md"
         >
-          Add overlays, trim clips, and generate captions — all from your phone. Built by a creator, for creators.
+          Add deal overlays, generate AI captions with hashtags that get TikTok to classify your videos — then post. Built for creators who post 5–10+ BOF videos a day.
         </motion.p>
 
         <motion.div
@@ -73,7 +73,7 @@ export default function HeroSection() {
             href="https://getbofstudio.com/"
             className="group relative inline-block px-8 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-500 font-semibold text-base sm:text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 hover:scale-105 text-center"
           >
-            Start Creating
+            Start For Free — $9/mo
             <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity blur-xl -z-10" />
           </a>
         </motion.div>

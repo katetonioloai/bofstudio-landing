@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Text Overlay — BOF Style",
-    description: "Add attention-grabbing overlays to your videos. Choose from pill-style deal boxes or full-screen text hooks — the formats that TikTok Shop buyers respond to.",
+    title: "BOF Deal Overlays — Burned In",
+    description: "Pick a pill-style deal box or a big hook overlay. BOFstudio burns it right into your video so it shows up on every platform, every time — no stickers, no editing apps.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-blue-400">
         <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
@@ -26,8 +26,8 @@ const features = [
     ),
   },
   {
-    title: "AI-Generated Captions",
-    description: "Stop staring at a blank caption box. BOFstudio generates engaging, conversion-optimized product descriptions tailored for TikTok — complete with hashtags and hooks.",
+    title: "AI Captions That Get You Found",
+    description: "BOFstudio writes captions with your product name + BOF hashtags so TikTok classifies your video correctly. That means more search visibility, more views, more sales. No blank caption box.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-purple-400">
         <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
@@ -53,8 +53,8 @@ const features = [
     ),
   },
   {
-    title: "Video Trimming",
-    description: "Cut the first or last few seconds of your clip before adding overlays. No separate editing app needed.",
+    title: "Quick Trim Before You Post",
+    description: "Cut dead air from the start or end of your clip before burning the overlay. Tight videos perform better — and BOFstudio handles it all in one place.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-pink-400">
         <circle cx="6" cy="6" r="3" />
@@ -111,11 +111,11 @@ export default function Features() {
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Everything You Need to{" "}
             <span className="bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
-              Create BOF Content
+              Dominate TikTok Shop BOF
             </span>
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
-            Built for creators who post 5-10+ videos a day and need to move fast.
+            Overlays, captions, trimming — all in one tool. Post faster. Rank higher. Sell more.
           </p>
         </motion.div>
 

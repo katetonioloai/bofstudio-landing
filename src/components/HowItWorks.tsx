@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Upload Your Product Video",
-    description: "Drop in any product clip — straight from TikTok Shop, your phone, or a brand asset. Any format, any length.",
+    title: "Drop In Your Product Video",
+    description: "Upload up to 10 videos at once — from your phone, TikTok Shop, or brand assets. Any format works. Batch it.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-blue-400 sm:w-8 sm:h-8">
         <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
@@ -17,8 +17,8 @@ const steps = [
   },
   {
     number: "02",
-    title: "Get Overlay + Caption",
-    description: "BOFstudio burns your chosen overlay onto the video — pill-style deal boxes or text hooks — then generates an engaging caption ready to post.",
+    title: "Get Overlay + Caption — Post It",
+    description: "BOFstudio burns a pill-style deal box or hook text onto your video, then generates an AI caption with product-specific hashtags so TikTok knows exactly what you're selling. More views. More sales.",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-purple-400 sm:w-8 sm:h-8">
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -40,10 +40,10 @@ export default function HowItWorks() {
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 sm:mb-4">
             Two steps.{" "}
-            <span className="text-gray-500">That&apos;s it.</span>
+            <span className="text-gray-500">No editing skills needed.</span>
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
-            No learning curve. No editing skills required. Upload and go.
+            Upload. Get your overlay + caption. Post. Repeat 10 times today.
           </p>
         </motion.div>
 
