@@ -26,11 +26,9 @@ export default function Navbar() {
       {/* Floating pill navbar */}
       <div className="flex items-center justify-between gap-2 px-4 sm:px-6 py-2.5 rounded-full bg-white/[0.06] backdrop-blur-xl border border-white/10 shadow-lg shadow-black/20 max-w-3xl w-full">
         {/* Logo */}
-        <Link href="/" className="text-lg font-bold tracking-tight flex-shrink-0">
-          <span className="bg-gradient-to-r from-blue-500 to-purple-400 bg-clip-text text-transparent">
-            BOF
-          </span>
-          <span className="text-white">studio</span>
+        <Link href="/" className="flex-shrink-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/bofstudio-landing/logo.png" alt="BOFstudio" className="h-8 w-auto brightness-0 invert" />
         </Link>
 
         {/* Desktop nav links — centered */}
